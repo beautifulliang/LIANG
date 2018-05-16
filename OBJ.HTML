@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,init">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      var a = 0;
+      var arr = [1,2,3,4];
+
+
+      var audi = {
+        make: 'audi',
+        model: 'A6',
+        year: 2016,
+        color: 'black',
+        passengers: 4,
+        convertible: false,
+        mileage: 500
+      }
+    
+
+
+      var fiat ={
+        make: 'fiat',
+        model: '500',
+        year: 1957,
+        color: "Medium Blue",
+        drive: function () {
+          alert.log("Zoom Zoom!!!" );
+        },
+        setcolor: function(c){
+          this.color =c;
+        },
+        getcolor: function(){
+          return this.color;
+        }
+      }
+    
+
+    
+    
+
+    //2制造一个让车熄火的方法 （变成false）
+   
+    fiat.start();
+    fiat.drive();
+    fiat.stop();
+
+
+
+
+    </script>
+  </body>
+</html>
+
+document.write(audi.make + "是"+audi.year+"年制造的<br>")
+document.write(bugatti.make+"是"+bugatti.year+"年制造得<br>")
+
+
+if(audi.year >=2017 && audi.mileage<=10000){
+  document.write(audi.make +"是新车")；
+
+}else{
+  document.write(audi)
